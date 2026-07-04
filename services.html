@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services - Dental Point, Rawalpindi</title>
+<meta name="description" content="Explore every treatment at Dental Point cleanings, root canals, veneers, Invisalign, implants and emergency care. Click a tooth on our interactive map to see what it usually needs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo"><svg class="logo-mark" width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M15 3C10.5 3 7 5.8 7 10.5c0 3 1.1 5.3 1.9 8.2.6 2.2 1 5.1 2.4 6.7.8.9 1.9.9 2.6-.2.8-1.3 1-4.3 1.6-4.3s.8 3 1.6 4.3c.7 1.1 1.8 1.1 2.6.2 1.4-1.6 1.8-4.5 2.4-6.7.8-2.9 1.9-5.2 1.9-8.2C23 5.8 19.5 3 15 3z" fill="var(--scrub-teal)"/>
+        <circle cx="15" cy="9.5" r="1.6" fill="var(--coral)"/>
+      </svg>
+      Dental Point<span class="dot">.</span></a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Results</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle-btn" id="navToggleBtn" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <div class="header-actions">
+      <a href="contact.html" class="btn btn-primary">Book a visit</a>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Results</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+  <a href="contact.html" class="btn btn-primary">Book a visit</a>
+</div>
+
+<!-- ============ PAGE HERO ============ -->
+<section class="hero" style="padding-bottom:20px;">
+  <div class="container">
+    <p class="eyebrow">Services</p>
+    <h1 style="font-size:var(--step-3); max-width:16ch;">Every tooth tells us something different.</h1>
+    <p class="hero-sub">Click a region on the map below to see what it's usually treated for then scroll down for full details on every service we offer.</p>
+  </div>
+</section>
+
+<!-- ============ INTERACTIVE TOOTH MAP (signature element) ============ -->
+<section class="section" style="padding-top:20px;">
+  <div class="container">
+    <div class="tooth-map-wrap">
+      <div class="tooth-map-svg">
+        <svg viewBox="0 0 360 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Interactive diagram of upper and lower teeth">
+          <!-- Upper arch -->
+          <text x="180" y="24" text-anchor="middle" class="arch-label">Upper arch</text>
+          <g id="upperArch">
+            <!-- molars -->
+            <rect data-region="molar" x="18"  y="40" width="34" height="46" rx="10" class="tooth"/>
+            <rect data-region="molar" x="18"  y="90" width="34" height="46" rx="10" class="tooth"/>
+            <rect data-region="molar" x="308" y="40" width="34" height="46" rx="10" class="tooth"/>
+            <rect data-region="molar" x="308" y="90" width="34" height="46" rx="10" class="tooth"/>
+            <!-- premolars -->
+            <rect data-region="premolar" x="58"  y="52" width="30" height="42" rx="10" class="tooth"/>
+            <rect data-region="premolar" x="58"  y="98" width="30" height="42" rx="10" class="tooth"/>
+            <rect data-region="premolar" x="272" y="52" width="30" height="42" rx="10" class="tooth"/>
+            <rect data-region="premolar" x="272" y="98" width="30" height="42" rx="10" class="tooth"/>
+            <!-- canines -->
+            <rect data-region="canine" x="96"  y="60" width="26" height="50" rx="12" class="tooth"/>
+            <rect data-region="canine" x="238" y="60" width="26" height="50" rx="12" class="tooth"/>
+            <!-- incisors / front -->
+            <rect data-region="front" x="128" y="66" width="24" height="56" rx="8" class="tooth"/>
+            <rect data-region="front" x="154" y="70" width="24" height="60" rx="8" class="tooth"/>
+            <rect data-region="front" x="180" y="70" width="24" height="60" rx="8" class="tooth"/>
+            <rect data-region="front" x="206" y="66" width="24" height="56" rx="8" class="tooth"/>
+          </g>
+
+          <!-- gap -->
+          <line x1="20" y1="210" x2="340" y2="210" class="arch-divider"/>
+
+          <!-- Lower arch -->
+          <text x="180" y="398" text-anchor="middle" class="arch-label">Lower arch</text>
+          <g id="lowerArch">
+            <rect data-region="molar" x="18"  y="330" width="34" height="46" rx="10" class="tooth"/>
+            <rect data-region="molar" x="18"  y="280" width="34" height="46" rx="10" class="tooth"/>
+            <rect data-region="molar" x="308" y="330" width="34" height="46" rx="10" class="tooth"/>
+            <rect data-region="molar" x="308" y="280" width="34" height="46" rx="10" class="tooth"/>
+            <rect data-region="premolar" x="58"  y="322" width="30" height="42" rx="10" class="tooth"/>
+            <rect data-region="premolar" x="58"  y="276" width="30" height="42" rx="10" class="tooth"/>
+            <rect data-region="premolar" x="272" y="322" width="30" height="42" rx="10" class="tooth"/>
+            <rect data-region="premolar" x="272" y="276" width="30" height="42" rx="10" class="tooth"/>
+            <rect data-region="canine" x="96"  y="306" width="26" height="50" rx="12" class="tooth"/>
+            <rect data-region="canine" x="238" y="306" width="26" height="50" rx="12" class="tooth"/>
+            <rect data-region="front" x="128" y="308" width="24" height="52" rx="8" class="tooth"/>
+            <rect data-region="front" x="154" y="304" width="24" height="56" rx="8" class="tooth"/>
+            <rect data-region="front" x="180" y="304" width="24" height="56" rx="8" class="tooth"/>
+            <rect data-region="front" x="206" y="308" width="24" height="52" rx="8" class="tooth"/>
+          </g>
+        </svg>
+      </div>
+
+      <div class="tooth-map-panel" id="toothPanel">
+        <span class="tag" id="toothTag">Tap a tooth</span>
+        <h3 id="toothTitle">Explore the map</h3>
+        <p id="toothText">Front teeth, canines, premolars and molars each tend to run into different problems. Click any tooth on the diagram to see what it usually needs.</p>
+        <a href="#directory" class="btn btn-ghost" id="toothCta" style="display:none;">Jump to this service</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FULL SERVICE DIRECTORY ============ -->
+<section class="section section-alt" id="directory">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Full directory</p>
+      <h2>Every service, explained</h2>
+    </div>
+
+    <div class="service-detail" id="cleaning">
+      <div class="service-detail-num">01</div>
+      <div>
+        <h3>Cleanings &amp; check-ups</h3>
+        <p>A routine visit includes scaling to remove plaque and tartar, polishing, and a full oral exam including a quick screening for early signs of decay, gum disease, or oral cancer. Recommended every six months.</p>
+        <span class="pill">30–45 min</span><span class="pill">PKR 2,500–5,000</span>
+      </div>
+    </div>
+
+    <div class="service-detail" id="root-canal">
+      <div class="service-detail-num">02</div>
+      <div>
+        <h3>Root canal therapy</h3>
+        <p>When decay or injury reaches the nerve inside a tooth, we remove the infected tissue, clean the canal, and seal it saving the natural tooth instead of extracting it. Done under local anesthesia; most patients feel immediate relief from the pain that brought them in.</p>
+        <span class="pill">1–2 visits</span><span class="pill">PKR 15,000–35,000</span>
+      </div>
+    </div>
+
+    <div class="service-detail" id="veneers">
+      <div class="service-detail-num">03</div>
+      <div>
+        <h3>Veneers &amp; whitening</h3>
+        <p>Thin porcelain shells bonded to the front of your teeth to fix chips, gaps, or discoloration permanently. For a less invasive option, in clinic whitening lifts stains from coffee, tea, or smoking in a single session.</p>
+        <span class="pill">Veneers: PKR 18,000–45,000/tooth</span><span class="pill">Whitening: PKR 8,000–20,000</span>
+      </div>
+    </div>
+
+    <div class="service-detail" id="invisalign">
+      <div class="service-detail-num">04</div>
+      <div>
+        <h3>Invisalign</h3>
+        <p>Clear, removable aligners that gradually straighten teeth without metal brackets or wires. We map your treatment with a 3D scan up front, so you see the projected result before committing.</p>
+        <span class="pill">6–18 months</span><span class="pill">PKR 180,000–350,000</span>
+      </div>
+    </div>
+
+    <div class="service-detail" id="implants">
+      <div class="service-detail-num">05</div>
+      <div>
+        <h3>Implants</h3>
+        <p>A titanium post placed in the jaw replaces a missing tooth's root, topped with a crown that looks and functions like a natural tooth. The most durable option for replacing a missing tooth long term.</p>
+        <span class="pill">3–6 months total</span><span class="pill">PKR 60,000–150,000</span>
+      </div>
+    </div>
+
+    <div class="service-detail" id="emergency">
+      <div class="service-detail-num">06</div>
+      <div>
+        <h3>Emergency care</h3>
+        <p>Sudden pain, a knocked out or broken tooth, or facial swelling shouldn't wait for a scheduled slot. We hold same day emergency openings every day we're open.</p>
+        <span class="pill">Same-day</span><span class="pill">Priced per case</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="cta-band">
+      <h2>Not sure which service you need?</h2>
+      <p>Use the symptom checker on our homepage, or just book a check-up we'll figure it out together.</p>
+      <a href="index.html#" class="btn btn-coral">Back to homepage</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">Dental Point.</div>
+        <p style="max-width:32ch; font-size:var(--step--1); color:rgba(255,255,255,0.6)">Modern, transparent dental care in Rawalpindi. Same-day emergency slots, honest pricing.</p>
+      </div>
+      <div>
+        <h5>Visit</h5>
+        <ul>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Results</a></li>
+          <li><a href="about.html">About us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:+923438867978">0343 8867978</a></li>
+          <li><a href="mailto:hello@dentalpointrwp.com">hello@dentalpointrwp.com</a></li>
+          <li><a href="contact.html">Directions</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Hours</h5>
+        <ul>
+          <li>Mon – Sat: 9am – 8pm</li>
+          <li>Sunday: Emergency only</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Dental Point, Rawalpindi.</span>
+      <span>Built with care.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

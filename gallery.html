@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Results - Dental Point, Rawalpindi</title>
+<meta name="description" content="See real before-and-after results from Dental Point — veneers, whitening, Invisalign and implant cases from patients in Rawalpindi.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo"><svg class="logo-mark" width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M15 3C10.5 3 7 5.8 7 10.5c0 3 1.1 5.3 1.9 8.2.6 2.2 1 5.1 2.4 6.7.8.9 1.9.9 2.6-.2.8-1.3 1-4.3 1.6-4.3s.8 3 1.6 4.3c.7 1.1 1.8 1.1 2.6.2 1.4-1.6 1.8-4.5 2.4-6.7.8-2.9 1.9-5.2 1.9-8.2C23 5.8 19.5 3 15 3z" fill="var(--scrub-teal)"/>
+        <circle cx="15" cy="9.5" r="1.6" fill="var(--coral)"/>
+      </svg>
+      Dental Point<span class="dot">.</span></a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Results</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle-btn" id="navToggleBtn" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <div class="header-actions">
+      <a href="contact.html" class="btn btn-primary">Book a visit</a>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Results</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+  <a href="contact.html" class="btn btn-primary">Book a visit</a>
+</div>
+
+<!-- ============ PAGE HERO ============ -->
+<section class="hero" style="padding-bottom:20px;">
+  <div class="container">
+    <p class="eyebrow">Real results</p>
+    <h1 style="font-size:var(--step-3); max-width:18ch;">Drag the line. See the difference.</h1>
+    <p class="hero-sub">A sample of real treatment outcomes from patients at Dental Point. Filter by procedure, then drag each slider to compare before and after.</p>
+  </div>
+</section>
+
+<!-- ============ FILTERABLE GALLERY ============ -->
+<section class="section" style="padding-top:20px;">
+  <div class="container">
+    <div class="gallery-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="veneers">Veneers</button>
+      <button class="filter-btn" data-filter="whitening">Whitening</button>
+      <button class="filter-btn" data-filter="invisalign">Invisalign</button>
+      <button class="filter-btn" data-filter="implants">Implants</button>
+    </div>
+
+    <div class="gallery-grid">
+
+      <div class="gallery-item visible" data-category="veneers">
+        <div class="ba-slider">
+          <div class="before">
+            <span class="label-badge">Before</span>
+            <img src="images/veneers-1-before.jpg" alt="veneers before treatment" onerror="this.style.display='none'">
+          </div>
+          <div class="after">
+            <span class="label-badge">After</span>
+            <img src="images/veneers-1-after.jpg" alt="veneers after treatment" onerror="this.style.display='none'">
+          </div>
+          <div class="handle"></div>
+        </div>
+        <div class="ba-caption">Porcelain veneers - 6 front teeth</div>
+      </div>
+
+      <div class="gallery-item visible" data-category="whitening">
+        <div class="ba-slider">
+          <div class="before">
+            <span class="label-badge">Before</span>
+            <img src="images/whitening-1-before.jpg" alt="whitening before treatment" onerror="this.style.display='none'">
+          </div>
+          <div class="after">
+            <span class="label-badge">After</span>
+            <img src="images/whitening-1-after.jpg" alt="whitening after treatment" onerror="this.style.display='none'">
+          </div>
+          <div class="handle"></div>
+        </div>
+        <div class="ba-caption">In clinic whitening - single session</div>
+      </div>
+
+      <div class="gallery-item visible" data-category="invisalign">
+        <div class="ba-slider">
+          <div class="before">
+            <span class="label-badge">Before</span>
+            <img src="images/invisalign-1-before.jpg" alt="invisalign before treatment" onerror="this.style.display='none'">
+          </div>
+          <div class="after">
+            <span class="label-badge">After</span>
+            <img src="images/invisalign-1-after.jpg" alt="invisalign after treatment" onerror="this.style.display='none'">
+          </div>
+          <div class="handle"></div>
+        </div>
+        <div class="ba-caption">Invisalign - 11 month treatment</div>
+      </div>
+
+      <div class="gallery-item visible" data-category="implants">
+        <div class="ba-slider">
+          <div class="before">
+            <span class="label-badge">Before</span>
+            <img src="images/implants-1-before.jpg" alt="implants before treatment" onerror="this.style.display='none'">
+          </div>
+          <div class="after">
+            <span class="label-badge">After</span>
+            <img src="images/implants-1-after.jpg" alt="implants after treatment" onerror="this.style.display='none'">
+          </div>
+          <div class="handle"></div>
+        </div>
+        <div class="ba-caption">Single implant  lower left molar</div>
+      </div>
+
+      <div class="gallery-item visible" data-category="veneers">
+        <div class="ba-slider">
+          <div class="before">
+            <span class="label-badge">Before</span>
+            <img src="images/veneers-2-before.jpg" alt="veneers before treatment" onerror="this.style.display='none'">
+          </div>
+          <div class="after">
+            <span class="label-badge">After</span>
+            <img src="images/veneers-2-after.jpg" alt="veneers after treatment" onerror="this.style.display='none'">
+          </div>
+          <div class="handle"></div>
+        </div>
+        <div class="ba-caption">Veneers  gap closure</div>
+      </div>
+
+      <div class="gallery-item visible" data-category="whitening">
+        <div class="ba-slider">
+          <div class="before">
+            <span class="label-badge">Before</span>
+            <img src="images/whitening-2-before.jpg" alt="whitening before treatment" onerror="this.style.display='none'">
+          </div>
+          <div class="after">
+            <span class="label-badge">After</span>
+            <img src="images/whitening-2-after.jpg" alt="whitening after treatment" onerror="this.style.display='none'">
+          </div>
+          <div class="handle"></div>
+        </div>
+        <div class="ba-caption">Whitening  coffee &amp; tea staining</div>
+      </div>
+
+    </div>
+
+    <p class="gallery-note">To add real photos: create an <code>images</code> folder next to this page, and drop in files named like <code>veneers 1 before.jpg</code> and <code>veneers 1 after.jpg</code> - the slider will pick them up automatically. Until then, these show as blank cards (only patients who gave consent should ever appear here).</p>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="section">
+  <div class="container">
+    <div class="cta-band">
+      <h2>Want results like these?</h2>
+      <p>Book a free cosmetic consult and we'll map out what's realistic for your smile.</p>
+      <a href="contact.html" class="btn btn-coral">Book a consult</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">Dental Point.</div>
+        <p style="max-width:32ch; font-size:var(--step--1); color:rgba(255,255,255,0.6)">Modern, transparent dental care in Rawalpindi. Same day emergency slots, honest pricing.</p>
+      </div>
+      <div>
+        <h5>Visit</h5>
+        <ul>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Results</a></li>
+          <li><a href="about.html">About us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:+923438867978">0343 8867978</a></li>
+          <li><a href="mailto:hello@dentalpointrwp.com">hello@dentalpointrwp.com</a></li>
+          <li><a href="contact.html">Directions</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Hours</h5>
+        <ul>
+          <li>Mon – Sat: 9am – 8pm</li>
+          <li>Sunday: Emergency only</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Dental Point, Rawalpindi.</span>
+      <span>Built with care.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

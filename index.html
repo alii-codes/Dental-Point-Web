@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dental Point - Modern Dental Care in Rawalpindi</title>
+<meta name="description" content="Dental Point in Rawalpindi offers modern, transparent dental care cleanings, root canals, veneers, and Invisalign. Tell us what's bothering you and we'll tell you exactly what to do next.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<!-- Structured data for local SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dentist",
+  "name": "Dental Point",
+  "image": "",
+  "founder": {
+    "@type": "Person",
+    "name": "Dr. Adnan Qadir Khan"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Muhammad Iqbal Road, 6th Road, Dhoke Paracha",
+    "addressLocality": "Rawalpindi",
+    "addressCountry": "PK"
+  },
+  "telephone": "+92-343-8867978",
+  "url": "https://www.dentalpointrwp.com",
+  "openingHours": "Mo-Sa 09:00-20:00"
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo"><svg class="logo-mark" width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M15 3C10.5 3 7 5.8 7 10.5c0 3 1.1 5.3 1.9 8.2.6 2.2 1 5.1 2.4 6.7.8.9 1.9.9 2.6-.2.8-1.3 1-4.3 1.6-4.3s.8 3 1.6 4.3c.7 1.1 1.8 1.1 2.6.2 1.4-1.6 1.8-4.5 2.4-6.7.8-2.9 1.9-5.2 1.9-8.2C23 5.8 19.5 3 15 3z" fill="var(--scrub-teal)"/>
+        <circle cx="15" cy="9.5" r="1.6" fill="var(--coral)"/>
+      </svg>
+      Dental Point<span class="dot">.</span></a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Results</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle-btn" id="navToggleBtn" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <div class="header-actions">
+      <a href="contact.html" class="btn btn-primary">Book a visit</a>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Results</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+  <a href="contact.html" class="btn btn-primary">Book a visit</a>
+</div>
+
+<!-- ============ HERO + TRIAGE (signature element) ============ -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <p class="eyebrow">Dental Point, Rawalpindi</p>
+      <h1>What's bothering<br><em>your teeth</em> today?</h1>
+      <p class="hero-sub">Skip the guesswork. Tell us what you're feeling and we'll tell you exactly what it usually means, how urgent it is, and what to do next before you even call.</p>
+      <div class="hero-cta-row">
+        <a href="contact.html" class="btn btn-primary">Book an appointment</a>
+        <a href="services.html" class="btn btn-ghost">See all services</a>
+      </div>
+      <div class="hero-note"><span class="pulse"></span> Same day emergency slots open today</div>
+    </div>
+
+    <div class="triage-card">
+      <h3>Quick symptom check</h3>
+      <p class="triage-sub">Pick what best describes it takes 5 seconds.</p>
+      <div class="triage-options" id="triageOptions">
+        <button class="triage-opt" data-key="pain"><span class="icon">🦷</span>Tooth pain</button>
+        <button class="triage-opt" data-key="bleeding"><span class="icon">🩸</span>Bleeding gums</button>
+        <button class="triage-opt" data-key="broken"><span class="icon">🔨</span>Chipped / broken tooth</button>
+        <button class="triage-opt" data-key="sensitivity"><span class="icon">❄️</span>Sensitivity to cold</button>
+        <button class="triage-opt" data-key="checkup"><span class="icon">✨</span>Just a check-up</button>
+        <button class="triage-opt" data-key="cosmetic"><span class="icon">😁</span>Want a better smile</button>
+      </div>
+      <div class="triage-result" id="triageResult">
+        <span class="tag" id="triageTag">Guidance</span>
+        <h4 id="triageTitle"></h4>
+        <p id="triageText"></p>
+        <a href="contact.html" class="btn btn-coral" id="triageCta">Book this visit</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="trust-strip">
+  <div class="container">
+    <div class="trust-item"><strong>1 on 1</strong> care, every visit</div>
+    <div class="trust-item"><strong>Rawalpindi</strong> based clinic</div>
+    <div class="trust-item"><strong>Transparent</strong> pricing, no surprises</div>
+    <div class="trust-item"><strong>Same-day</strong> emergency care</div>
+  </div>
+</div>
+
+<!-- ============ SERVICES ============ -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">What we treat</p>
+      <h2>Care for every part of the visit</h2>
+    </div>
+    <div class="services-grid">
+      <a href="services.html#cleaning" class="service-card">
+        <span class="num">01</span>
+        <h3>Cleanings &amp; check-ups</h3>
+        <p>Routine scaling, polishing and oral exams every six months.</p>
+      </a>
+      <a href="services.html#root-canal" class="service-card">
+        <span class="num">02</span>
+        <h3>Root canal therapy</h3>
+        <p>Pain focused treatment for infected or damaged tooth pulp.</p>
+      </a>
+      <a href="services.html#veneers" class="service-card">
+        <span class="num">03</span>
+        <h3>Veneers &amp; whitening</h3>
+        <p>Cosmetic work designed around your natural smile line.</p>
+      </a>
+      <a href="services.html#invisalign" class="service-card">
+        <span class="num">04</span>
+        <h3>Invisalign</h3>
+        <p>Clear aligners tracked with 3D scans, no metal wires.</p>
+      </a>
+      <a href="services.html#implants" class="service-card">
+        <span class="num">05</span>
+        <h3>Implants</h3>
+        <p>Permanent, natural feeling replacements for missing teeth.</p>
+      </a>
+      <a href="services.html#emergency" class="service-card">
+        <span class="num">06</span>
+        <h3>Emergency care</h3>
+        <p>Same day slots for pain, breaks, and swelling.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRICE ESTIMATOR ============ -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="estimator">
+      <div>
+        <p class="eyebrow" style="color:var(--mint)">Cost transparency</p>
+        <h2>Know the range before you walk in</h2>
+        <p>Most clinics make you call to find out. Pick a procedure and see a realistic price range for a cash pay visit in Rawalpindi no obligation.</p>
+      </div>
+      <div>
+        <select id="procedureSelect">
+          <option value="">Select a procedure…</option>
+          <option value="cleaning">Cleaning &amp; polish</option>
+          <option value="filling">Cavity filling</option>
+          <option value="rootcanal">Root canal (single tooth)</option>
+          <option value="whitening">Teeth whitening</option>
+          <option value="veneer">Porcelain veneer (per tooth)</option>
+          <option value="implant">Dental implant</option>
+          <option value="invisalign">Invisalign (full treatment)</option>
+        </select>
+        <div class="estimate-output" id="estimateOutput">
+          <div class="caption">Estimated cash-pay range</div>
+          <div class="range" id="estimateRange">PKR - </div>
+          <div class="caption" id="estimateCaption">Choose a procedure to see pricing.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ THE DOCTOR ============ -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Your dentist</p>
+      <h2>Treated personally by Dr. Adnan, every visit</h2>
+    </div>
+    <div class="solo-doctor-card">
+      <div class="team-photo solo-doctor-photo">AQ</div>
+      <div>
+        <h3>Dr. Adnan Qadir Khan</h3>
+        <div class="team-role">Founder &amp; Lead Dentist</div>
+        <p>Founder of Dental Point and the only dentist here every patient is treated personally by him, start to finish, with no handoffs between different doctors.</p>
+        <a href="about.html" class="btn btn-ghost">More about Dr. Adnan</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="section">
+  <div class="container">
+    <div class="cta-band">
+      <h2>Your smile shouldn't wait on hold.</h2>
+      <p>Book online in under a minute no phone call, no hold music.</p>
+      <a href="contact.html" class="btn btn-coral">Book your visit</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">Dental Point.</div>
+        <p style="max-width:32ch; font-size:var(--step--1); color:rgba(255,255,255,0.6)">Modern, transparent dental care in Rawalpindi. Same day emergency slots, honest pricing.</p>
+      </div>
+      <div>
+        <h5>Visit</h5>
+        <ul>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Results</a></li>
+          <li><a href="about.html">About us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:+923438867978">0343 8867978</a></li>
+          <li><a href="mailto:hello@dentalpointrwp.com">hello@dentalpointrwp.com</a></li>
+          <li><a href="contact.html">Directions</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Hours</h5>
+        <ul>
+          <li>Mon – Sat: 9am – 8pm</li>
+          <li>Sunday: Emergency only</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Dental Point, Rawalpindi.</span>
+      <span>Built with care.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
